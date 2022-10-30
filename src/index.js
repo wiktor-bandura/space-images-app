@@ -25,7 +25,8 @@ form.addEventListener('submit', e => {
                     const { description } = item.data[0];
                     const { href } = item.links[0];
 
-                    showPhotos(href, description);
+                    showPhotos(href, description)
+                        .then(result => console.log(result));
                 });
                 searchForm.classList.add('got-items');
             }
