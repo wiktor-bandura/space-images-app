@@ -11,9 +11,8 @@ $primary-color: #171717;
     text-align: center;
     background-size: cover;
     background-position: center;
-}
 
-.pic:hover {
-    opacity: 0.9;
-    cursor: pointer;
+    &:hover {
+
+    }
 }
