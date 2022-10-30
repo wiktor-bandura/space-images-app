@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Turret+Road&display=swap');
-
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -12,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-.search-form {
+.main {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -20,95 +18,66 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(to right bottom, #34f4a1, #ff22aa);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right bottom, #ff22aa, #34f4a1);
     color: white;
     transition: height 0.5s ease-in-out;
 
-    .app-header {
+    &__title {
         letter-spacing: 4px;
-        font-family: 'Turret Road', cursive;
+        font-family: 'Montserrat', sans-serif;
         font-size: 48px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-
-        input[type=text] {
-            background: transparent;
-            width: 250px;
-            height: 50px;
-            padding: 20px 10px;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            outline: none;
-            border: none;
-            border-bottom: 2px solid white;
-        }
-
-        input[type=submit] {
-            margin-top: 30px;
-            height: 40px;
-            text-transform: uppercase;
-            outline: none;
-            border: none;
-            border-radius: 2%;
-            background: white;
-            color: black;
-        }
-    }
-
-    .no-results {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        font-family: sans-serif;
+        text-transform: uppercase;
     }
 }
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+
+    &__fraze {
+        background: transparent;
+        width: 250px;
+        height: 50px;
+        padding: 20px 10px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+    }
+
+    &__submit {
+        margin-top: 30px;
+        height: 40px;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+        border-radius: 2%;
+        background: white;
+        color: #171717;
+    }
+}
+
+.no-results {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
 
 .container {
     max-width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 15px;
-    transition: opacity 0.2 ease-in-out;
-    padding: 0 10px;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .got-items {
     height: 400px;
-}
-
-@media (min-width: 800px) {
-    .got-items {
-        flex-direction: row;
-        height: 100px;
-        align-items: center;
-        justify-content: space-around;
-
-        .app-header {
-            font-size: 20px;
-        }
-
-        form {
-            width: 30%;
-            flex-direction: row;
-
-            input[type=submit] {
-                margin-top: 10px;
-                margin-left: 20px;
-                padding: 10px 20px;
-            }
-        }
-    }
-
-    .no-results {
-        height: 90px;
-        font-size: 36px;
-    }
+    margin-bottom: 15px;
 }

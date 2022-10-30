@@ -1,18 +1,5 @@
-$primary-color: #171717;
-
 .pic {
-    padding: 10px;
-    margin-top: 10px;
-    height: 300px;
-    background: $primary-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-
-    &:hover {
-
-    }
+  height: 300px;
+  background: #171717;
+  background-size: cover;
 }
