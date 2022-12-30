@@ -1,4 +1,5 @@
 # Simple JavaScript App to search in NASA Images API and display results to the user 👩‍🚀👽
+[Visit](https://wiktor-bandura.github.io/space-images-app/dist/)
 ---
 ## Table of contents 📚
 - [General info](#general-info)
